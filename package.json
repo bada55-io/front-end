@@ -1,0 +1,59 @@
+{
+  "name": "bada55-io",
+  "version": "1.0.0",
+  "description": "CSS hex color words for web developers",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'test/**/*.@(js|jsx)'",
+    "test:watch": "npm run test -- --watch --watch-extensions jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bada55-io/front-end.git"
+  },
+  "keywords": [],
+  "author": "dhoko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bada55-io/front-end/issues"
+  },
+  "homepage": "https://github.com/bada55-io/front-end/#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "budo": "^8.2.2",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.3",
+    "css-loader": "^0.23.1",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.3",
+    "immutable": "^3.7.6",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^0.14.7",
+    "react-addons-pure-render-mixin": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.5",
+    "redux": "^3.3.1",
+    "redux-thunk": "^2.0.1",
+    "todomvc-app-css": "^2.0.4"
+  }
+}
